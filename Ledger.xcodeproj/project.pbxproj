@@ -13,6 +13,18 @@
 		F153F5D222CC96B100773CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F153F5D122CC96B100773CD8 /* Assets.xcassets */; };
 		F153F5D522CC96B100773CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F153F5D322CC96B100773CD8 /* LaunchScreen.storyboard */; };
 		F153F5E022CC96B100773CD8 /* LedgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5DF22CC96B100773CD8 /* LedgerTests.swift */; };
+		F153F5EC22CC989800773CD8 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5EB22CC989800773CD8 /* CurrencyTests.swift */; };
+		F153F5EE22CCA8EC00773CD8 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5ED22CCA8EC00773CD8 /* Currency.swift */; };
+		F153F5F022CCAC3100773CD8 /* ValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5EF22CCAC3100773CD8 /* ValueTests.swift */; };
+		F153F5F222CCACEE00773CD8 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5F122CCACEE00773CD8 /* Value.swift */; };
+		F153F5F422CCAE2100773CD8 /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5F322CCAE2100773CD8 /* TagTests.swift */; };
+		F153F5F622CCAF1800773CD8 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5F522CCAF1800773CD8 /* Tag.swift */; };
+		F153F5F822CD155200773CD8 /* RecordCategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5F722CD155200773CD8 /* RecordCategoryTests.swift */; };
+		F153F5FA22CD168000773CD8 /* RecordCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5F922CD168000773CD8 /* RecordCategory.swift */; };
+		F153F5FC22CD1F0600773CD8 /* AccountingRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5FB22CD1F0600773CD8 /* AccountingRecordTests.swift */; };
+		F153F5FE22CD20F800773CD8 /* AccountingRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5FD22CD20F800773CD8 /* AccountingRecord.swift */; };
+		F153F60522CD2B7900773CD8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F60422CD2B7900773CD8 /* Repository.swift */; };
+		F153F60722CD2C1C00773CD8 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F60622CD2C1C00773CD8 /* RepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 		F153F5DB22CC96B100773CD8 /* LedgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F153F5DF22CC96B100773CD8 /* LedgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerTests.swift; sourceTree = "<group>"; };
 		F153F5E122CC96B100773CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F153F5EB22CC989800773CD8 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
+		F153F5ED22CCA8EC00773CD8 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		F153F5EF22CCAC3100773CD8 /* ValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTests.swift; sourceTree = "<group>"; };
+		F153F5F122CCACEE00773CD8 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		F153F5F322CCAE2100773CD8 /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
+		F153F5F522CCAF1800773CD8 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		F153F5F722CD155200773CD8 /* RecordCategoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCategoryTests.swift; sourceTree = "<group>"; };
+		F153F5F922CD168000773CD8 /* RecordCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCategory.swift; sourceTree = "<group>"; };
+		F153F5FB22CD1F0600773CD8 /* AccountingRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingRecordTests.swift; sourceTree = "<group>"; };
+		F153F5FD22CD20F800773CD8 /* AccountingRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingRecord.swift; sourceTree = "<group>"; };
+		F153F60422CD2B7900773CD8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F153F60622CD2C1C00773CD8 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +101,7 @@
 		F153F5C922CC96B000773CD8 /* Ledger */ = {
 			isa = PBXGroup;
 			children = (
+				F153F5EA22CC96BD00773CD8 /* Domain */,
 				F153F5CA22CC96B000773CD8 /* AppDelegate.swift */,
 				F153F5CC22CC96B000773CD8 /* ViewController.swift */,
 				F153F5CE22CC96B000773CD8 /* Main.storyboard */,
@@ -92,8 +117,43 @@
 			children = (
 				F153F5DF22CC96B100773CD8 /* LedgerTests.swift */,
 				F153F5E122CC96B100773CD8 /* Info.plist */,
+				F153F5EB22CC989800773CD8 /* CurrencyTests.swift */,
+				F153F5EF22CCAC3100773CD8 /* ValueTests.swift */,
+				F153F5F322CCAE2100773CD8 /* TagTests.swift */,
+				F153F5F722CD155200773CD8 /* RecordCategoryTests.swift */,
+				F153F5FB22CD1F0600773CD8 /* AccountingRecordTests.swift */,
+				F153F60622CD2C1C00773CD8 /* RepositoryTests.swift */,
 			);
 			path = LedgerTests;
+			sourceTree = "<group>";
+		};
+		F153F5EA22CC96BD00773CD8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F153F60322CD2B1A00773CD8 /* Repository */,
+				F153F60022CD287700773CD8 /* Controllers */,
+				F153F5ED22CCA8EC00773CD8 /* Currency.swift */,
+				F153F5F122CCACEE00773CD8 /* Value.swift */,
+				F153F5F522CCAF1800773CD8 /* Tag.swift */,
+				F153F5F922CD168000773CD8 /* RecordCategory.swift */,
+				F153F5FD22CD20F800773CD8 /* AccountingRecord.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F153F60022CD287700773CD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F153F60322CD2B1A00773CD8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F153F60422CD2B7900773CD8 /* Repository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F153F5FE22CD20F800773CD8 /* AccountingRecord.swift in Sources */,
+				F153F5EE22CCA8EC00773CD8 /* Currency.swift in Sources */,
 				F153F5CD22CC96B000773CD8 /* ViewController.swift in Sources */,
+				F153F60522CD2B7900773CD8 /* Repository.swift in Sources */,
+				F153F5F622CCAF1800773CD8 /* Tag.swift in Sources */,
 				F153F5CB22CC96B000773CD8 /* AppDelegate.swift in Sources */,
+				F153F5F222CCACEE00773CD8 /* Value.swift in Sources */,
+				F153F5FA22CD168000773CD8 /* RecordCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F153F5F422CCAE2100773CD8 /* TagTests.swift in Sources */,
+				F153F60722CD2C1C00773CD8 /* RepositoryTests.swift in Sources */,
+				F153F5EC22CC989800773CD8 /* CurrencyTests.swift in Sources */,
 				F153F5E022CC96B100773CD8 /* LedgerTests.swift in Sources */,
+				F153F5FC22CD1F0600773CD8 /* AccountingRecordTests.swift in Sources */,
+				F153F5F022CCAC3100773CD8 /* ValueTests.swift in Sources */,
+				F153F5F822CD155200773CD8 /* RecordCategoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,7 +5,60 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>7B4EC533-5480-437E-886D-5B368094AFD1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>7B4EC533-5480-437E-886D-5B368094AFD1.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Ledger-fpsnuhvjwougdpetryojterondcs</string>
+			<key>timeStartedRecording</key>
+			<real>583869718.97213495</real>
+			<key>timeStoppedRecording</key>
+			<real>583869719.235484</real>
+			<key>title</key>
+			<string>Build target Ledger</string>
+			<key>uniqueIdentifier</key>
+			<string>7B4EC533-5480-437E-886D-5B368094AFD1</string>
+		</dict>
+		<key>CA15BAAC-22D0-4514-807D-56508BC851AE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>CA15BAAC-22D0-4514-807D-56508BC851AE.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>LedgerTests-fpsnuhvjwougdpetryojterondcs</string>
+			<key>timeStartedRecording</key>
+			<real>583870255.90259302</real>
+			<key>timeStoppedRecording</key>
+			<real>583870256.47653306</real>
+			<key>title</key>
+			<string>Build target LedgerTests</string>
+			<key>uniqueIdentifier</key>
+			<string>CA15BAAC-22D0-4514-807D-56508BC851AE</string>
+		</dict>
+	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>
