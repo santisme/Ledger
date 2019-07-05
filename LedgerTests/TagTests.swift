@@ -10,11 +10,8 @@ import XCTest
 @testable import Ledger
 
 class TagTests: XCTestCase {
-
-    var cash: Tag!
     
     override func setUp() {
-        cash = Tag(name: .cash)
     }
 
     override func tearDown() {
@@ -22,15 +19,19 @@ class TagTests: XCTestCase {
     }
 
     func testTagExistence() {
-        XCTAssertNotNil(cash)
+        for each in Tag.allCases {
+            XCTAssertNotNil(each)
+        }
     }
 
-    func testTagNameRawValueEquals(){
-        XCTAssertEqual(cash.name.rawValue, "Cash")
+    func testTagEquality() {
+        XCTAssertEqual(Tag.cash, Tag.cash)
+        XCTAssertNotEqual(Tag.cash, Tag.earnings)
     }
     
-    func testTagEquals() {
-        let dummyTag = Tag(name: .cash)
-        XCTAssertEqual(cash, dummyTag)
+    func testTagHashable() {
+        XCTAssertEqual(Tag.cash.hashValue, Tag.cash.hashValue)
+        XCTAssertNotEqual(Tag.cash.hashValue, Tag.earnings.hashValue)
+        
     }
 }

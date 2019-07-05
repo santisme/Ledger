@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F134666B22CF469F002601E1 /* ValueReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134666A22CF469F002601E1 /* ValueReducerTests.swift */; };
+		F134666E22CF4A03002601E1 /* Array+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134666D22CF4A03002601E1 /* Array+Values.swift */; };
+		F14EDA1D22CE092F00E117DE /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EDA1B22CE092F00E117DE /* RecordListViewController.swift */; };
+		F14EDA1E22CE092F00E117DE /* RecordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14EDA1C22CE092F00E117DE /* RecordListViewController.xib */; };
+		F14EDA2022CE0C1300E117DE /* ListDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EDA1F22CE0C1300E117DE /* ListDataSourceTests.swift */; };
+		F14EDA2222CE0E2B00E117DE /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EDA2122CE0E2B00E117DE /* ListDataSource.swift */; };
+		F14EDA2422CE6DA100E117DE /* ValuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EDA2322CE6DA100E117DE /* ValuePresenter.swift */; };
+		F14EDA2622CE6F2C00E117DE /* ValueConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EDA2522CE6F2C00E117DE /* ValueConverter.swift */; };
+		F14EDA2822CE70F100E117DE /* ValueConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EDA2722CE70F100E117DE /* ValueConverterTests.swift */; };
 		F153F5CB22CC96B000773CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5CA22CC96B000773CD8 /* AppDelegate.swift */; };
 		F153F5CD22CC96B000773CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153F5CC22CC96B000773CD8 /* ViewController.swift */; };
 		F153F5D022CC96B000773CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F153F5CE22CC96B000773CD8 /* Main.storyboard */; };
@@ -38,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F134666A22CF469F002601E1 /* ValueReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueReducerTests.swift; sourceTree = "<group>"; };
+		F134666D22CF4A03002601E1 /* Array+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Values.swift"; sourceTree = "<group>"; };
+		F14EDA1B22CE092F00E117DE /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
+		F14EDA1C22CE092F00E117DE /* RecordListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordListViewController.xib; sourceTree = "<group>"; };
+		F14EDA1F22CE0C1300E117DE /* ListDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceTests.swift; sourceTree = "<group>"; };
+		F14EDA2122CE0E2B00E117DE /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
+		F14EDA2322CE6DA100E117DE /* ValuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuePresenter.swift; sourceTree = "<group>"; };
+		F14EDA2522CE6F2C00E117DE /* ValueConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueConverter.swift; sourceTree = "<group>"; };
+		F14EDA2722CE70F100E117DE /* ValueConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueConverterTests.swift; sourceTree = "<group>"; };
 		F153F5C722CC96B000773CD8 /* Ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F153F5CA22CC96B000773CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F153F5CC22CC96B000773CD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +98,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F134666C22CF49DA002601E1 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F134666D22CF4A03002601E1 /* Array+Values.swift */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		F14EDA1522CE081100E117DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F14EDA1622CE082700E117DE /* RecordListView */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F14EDA1622CE082700E117DE /* RecordListView */ = {
+			isa = PBXGroup;
+			children = (
+				F14EDA1B22CE092F00E117DE /* RecordListViewController.swift */,
+				F14EDA1C22CE092F00E117DE /* RecordListViewController.xib */,
+			);
+			path = RecordListView;
+			sourceTree = "<group>";
+		};
 		F153F5BE22CC96B000773CD8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +144,8 @@
 		F153F5C922CC96B000773CD8 /* Ledger */ = {
 			isa = PBXGroup;
 			children = (
+				F134666C22CF49DA002601E1 /* Additions */,
+				F14EDA1522CE081100E117DE /* Controllers */,
 				F153F5EA22CC96BD00773CD8 /* Domain */,
 				F153F5CA22CC96B000773CD8 /* AppDelegate.swift */,
 				F153F5CC22CC96B000773CD8 /* ViewController.swift */,
@@ -123,6 +168,9 @@
 				F153F5F722CD155200773CD8 /* RecordCategoryTests.swift */,
 				F153F5FB22CD1F0600773CD8 /* AccountingRecordTests.swift */,
 				F153F60622CD2C1C00773CD8 /* RepositoryTests.swift */,
+				F14EDA1F22CE0C1300E117DE /* ListDataSourceTests.swift */,
+				F14EDA2722CE70F100E117DE /* ValueConverterTests.swift */,
+				F134666A22CF469F002601E1 /* ValueReducerTests.swift */,
 			);
 			path = LedgerTests;
 			sourceTree = "<group>";
@@ -144,6 +192,9 @@
 		F153F60022CD287700773CD8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F14EDA2322CE6DA100E117DE /* ValuePresenter.swift */,
+				F14EDA2122CE0E2B00E117DE /* ListDataSource.swift */,
+				F14EDA2522CE6F2C00E117DE /* ValueConverter.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -240,6 +291,7 @@
 				F153F5D522CC96B100773CD8 /* LaunchScreen.storyboard in Resources */,
 				F153F5D222CC96B100773CD8 /* Assets.xcassets in Resources */,
 				F153F5D022CC96B000773CD8 /* Main.storyboard in Resources */,
+				F14EDA1E22CE092F00E117DE /* RecordListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14EDA2622CE6F2C00E117DE /* ValueConverter.swift in Sources */,
 				F153F5FE22CD20F800773CD8 /* AccountingRecord.swift in Sources */,
+				F134666E22CF4A03002601E1 /* Array+Values.swift in Sources */,
+				F14EDA1D22CE092F00E117DE /* RecordListViewController.swift in Sources */,
+				F14EDA2222CE0E2B00E117DE /* ListDataSource.swift in Sources */,
+				F14EDA2422CE6DA100E117DE /* ValuePresenter.swift in Sources */,
 				F153F5EE22CCA8EC00773CD8 /* Currency.swift in Sources */,
 				F153F5CD22CC96B000773CD8 /* ViewController.swift in Sources */,
 				F153F60522CD2B7900773CD8 /* Repository.swift in Sources */,
@@ -276,8 +333,11 @@
 				F153F60722CD2C1C00773CD8 /* RepositoryTests.swift in Sources */,
 				F153F5EC22CC989800773CD8 /* CurrencyTests.swift in Sources */,
 				F153F5E022CC96B100773CD8 /* LedgerTests.swift in Sources */,
+				F134666B22CF469F002601E1 /* ValueReducerTests.swift in Sources */,
 				F153F5FC22CD1F0600773CD8 /* AccountingRecordTests.swift in Sources */,
 				F153F5F022CCAC3100773CD8 /* ValueTests.swift in Sources */,
+				F14EDA2822CE70F100E117DE /* ValueConverterTests.swift in Sources */,
+				F14EDA2022CE0C1300E117DE /* ListDataSourceTests.swift in Sources */,
 				F153F5F822CD155200773CD8 /* RecordCategoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

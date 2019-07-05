@@ -12,9 +12,11 @@ import XCTest
 class CurrencyTests: XCTestCase {
 
     var euro: Currency!
-    
+    var usd: Currency!
+
     override func setUp() {
-        euro = Currency(name: .euro)
+        euro = Currency(code: "EUR")
+        usd = Currency(code: "USD")
     }
 
     override func tearDown() {
@@ -26,7 +28,16 @@ class CurrencyTests: XCTestCase {
     }
     
     func testCurrencyNameCheckRawValue() {
-//        let dollar = Currency(name: .usDollar)
-        XCTAssertEqual(euro.name.rawValue, "Euro")
+        XCTAssertEqual(Currency(code: "eUr").code, "EUR")
+    }
+    
+    func testCurrencyEquality() {
+        XCTAssertNotEqual(euro, usd)
+        
+        XCTAssertEqual(euro, Currency(code: "EUR"))
+    }
+    
+    func testCurrencyDebugDescription() {
+        XCTAssertEqual(Currency(code: "EUR").debugDescription, "Currency: EUR")
     }
 }

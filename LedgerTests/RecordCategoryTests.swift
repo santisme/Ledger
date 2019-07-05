@@ -10,27 +10,28 @@ import XCTest
 @testable import Ledger
 
 class RecordCategoryTests: XCTestCase {
-
-    var assets: RecordCategory!
     
     override func setUp() {
-        assets = RecordCategory(name: .assets)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testRecordCategoryExistence() {
-        XCTAssertNotNil(assets)
-    }
-
-    func testRecordCategoryNameRawValueEquals() {
-        XCTAssertEqual(assets.name.rawValue, "Assets")
+    func testTagExistence() {
+        for each in RecordCategory.allCases {
+            XCTAssertNotNil(each)
+        }
     }
     
-    func testRecordCategoryNameEquals() {
-        let dummyRecordCategory = RecordCategory(name: .assets)
-        XCTAssertEqual(assets, dummyRecordCategory)
+    func testTagEquality() {
+        XCTAssertEqual(RecordCategory.assets, RecordCategory.assets)
+        XCTAssertNotEqual(RecordCategory.assets, RecordCategory.equity)
+    }
+    
+    func testTagHashable() {
+        XCTAssertEqual(RecordCategory.assets.hashValue, RecordCategory.assets.hashValue)
+        XCTAssertNotEqual(RecordCategory.assets.hashValue, RecordCategory.equity.hashValue)
+        
     }
 }

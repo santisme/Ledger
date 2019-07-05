@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>9B05FEEB-E355-4215-B62E-ACB4503ECD95</key>
+		<key>24609D81-38C6-49B3-AC4D-079C49635D3A</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9B05FEEB-E355-4215-B62E-ACB4503ECD95.xcactivitylog</string>
+			<string>24609D81-38C6-49B3-AC4D-079C49635D3A.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,13 +30,45 @@
 			<key>signature</key>
 			<string>Debug Ledger</string>
 			<key>timeStartedRecording</key>
-			<real>583869709.83484697</real>
+			<real>584013456.73974597</real>
 			<key>timeStoppedRecording</key>
-			<real>583869716.44067204</real>
+			<real>584013474.83062899</real>
 			<key>title</key>
 			<string>Debug Ledger</string>
 			<key>uniqueIdentifier</key>
-			<string>9B05FEEB-E355-4215-B62E-ACB4503ECD95</string>
+			<string>24609D81-38C6-49B3-AC4D-079C49635D3A</string>
+		</dict>
+		<key>F49B7533-4840-4C5E-99AF-22F10E51294D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F49B7533-4840-4C5E-99AF-22F10E51294D.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Ledger project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Ledger</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Ledger</string>
+			<key>timeStartedRecording</key>
+			<real>584012308.12850595</real>
+			<key>timeStoppedRecording</key>
+			<real>584012320.66227698</real>
+			<key>title</key>
+			<string>Debug Ledger</string>
+			<key>uniqueIdentifier</key>
+			<string>F49B7533-4840-4C5E-99AF-22F10E51294D</string>
 		</dict>
 	</dict>
 </dict>

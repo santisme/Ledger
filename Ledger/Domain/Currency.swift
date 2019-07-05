@@ -8,34 +8,31 @@
 
 import Foundation
 
-typealias Currencies = Currency.Names
+typealias ISO4217 = String
 
-final class Currency {
+struct Currency {
+    let code: ISO4217
     
-    // MARK: - Properties
-    let name: Names
-
-    enum Names: String {
-        case euro = "Euro"
-        case usDollar = "US Dollar"
-        case bPound = "British Pound"
-    }
-
-    // MARK: - Inits
-    init(name: Currencies) {
-        self.name = name
+    init(code: ISO4217) {
+        self.code = code.uppercased()
     }
 }
 
 // MARK: - Extensions
 extension Currency: Hashable {
     func hash(into hasher: inout Hasher) {
-        hasher.combine(self.name)
+        hasher.combine(self.code)
     }
 }
 
 extension Currency: Equatable {
     static func == (lhs: Currency, rhs: Currency) -> Bool {
         return lhs.hashValue == rhs.hashValue
+    }
+}
+
+extension Currency: CustomDebugStringConvertible {
+    var debugDescription: String {
+        return "\(type(of: self)): \(self.code)"
     }
 }

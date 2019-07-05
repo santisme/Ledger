@@ -14,16 +14,15 @@ class AccountingRecordTests: XCTestCase {
     var record1: AccountingRecord!
     var record2: AccountingRecord!
     var record3: AccountingRecord!
-
-    var tag1: Tag!
-    var tag2: Tag!
+    var record4: AccountingRecord!
+    var value1: Value!
     
     override func setUp() {
-        tag1 = Tag(name: .cash)
-        tag2 = Tag(name: .earnings)
-        record1 = AccountingRecord(value: Value(value: 10.3, currency: Currency(name: .bPound)), tags: tag1, category: RecordCategory(name: .assets))
-        record2 = AccountingRecord(value: Value(value: 5.0, currency: Currency(name: .euro)), tags: tag1, category: RecordCategory(name: .assets))
-        record3 = AccountingRecord(value: Value(value: 1005.5, currency: Currency(name: .bPound)), tags: tag1, tag2, category: RecordCategory(name: .equity))
+        value1 = Value(value: 10.3, currency: "GBP")
+        record1 = AccountingRecord.cashRecord(value: value1)
+        record2 = AccountingRecord.inventoryRecord(value: Value(value: 5.0, currency: Currency(code: "EUR")))
+        record3 = AccountingRecord.cashRecord(value: Value(value: 1005.5, currency: Currency(code: "GBP")))
+        record4 = AccountingRecord.cashRecord(value: value1)
 
     }
 
@@ -36,19 +35,26 @@ class AccountingRecordTests: XCTestCase {
         XCTAssertNotNil(record3)
     }
     
-    func testAccountingRecordEquatable() {
+    func testAccountingRecordEquality() {
         // Compare value
         XCTAssertEqual(record1, record1)
         
         // Compare Identity
-        let dummyRecord = AccountingRecord(value: Value(value: 10.3, currency: Currency(name: .bPound)), tags: Tag(name: .cash), category: RecordCategory(name: .assets))
-        XCTAssertEqual(record1, dummyRecord)
+        XCTAssertEqual(record1, record4)
         
         // Compare Not Equals
         XCTAssertNotEqual(record1, record2)
     }
     
+    func testAccountingRecordHashable() {
+        XCTAssertEqual(record1.hashValue, record1.hashValue)
+        
+        XCTAssertEqual(record1.hashValue, record4.hashValue)
+        
+        XCTAssertNotEqual(record1.hashValue, record2.hashValue)
+    }
+    
     func testAccountingRecordTagCount() {
-        XCTAssertEqual(record3.tags.count, 2)
+        XCTAssertEqual(record3.tags.count, 1)
     }
 }

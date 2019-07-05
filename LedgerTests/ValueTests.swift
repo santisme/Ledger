@@ -15,8 +15,8 @@ class ValueTests: XCTestCase {
     var value2: Value!
     
     override func setUp() {
-        value1 = Value(value: 20.5, currency: Currency(name: .usDollar))
-        value2 = Value(value: 15.5, currency: Currency(name: .usDollar))
+        value1 = Value(value: 20.0, currency: Currency(code: "USD"))
+        value2 = Value(value: 15.5, currency: Currency(code: "USD"))
     }
 
     override func tearDown() {
@@ -25,8 +25,8 @@ class ValueTests: XCTestCase {
 
     func testValueExistence() {
         XCTAssertNotNil(value1)
+        XCTAssertNotNil(Value(value: 50.0, currency: "EUR"))
     }
-    
     
     func testValueLessThan() {
         XCTAssertLessThan(value2, value1)
@@ -36,17 +36,16 @@ class ValueTests: XCTestCase {
         XCTAssertLessThan(value2, value1)
     }
     
-    func testValueEquatable() {
+    func testValueEquality() {
         // Test Equatable
         XCTAssertEqual(value1, value1)
         
         // Test Identity
-        let dummyValue = Value(value: 20.5, currency: Currency(name: .usDollar))
+        let dummyValue = Value(value: 20, currency: "USD")
         XCTAssertEqual(value1, dummyValue)
         
         // Test Not Equatable
         XCTAssertNotEqual(value1, value2)
-        
-        
+        XCTAssertNotEqual(value1, Value(value: 20.0, currency: "EUR"))
     }
 }

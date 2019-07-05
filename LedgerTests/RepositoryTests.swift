@@ -7,13 +7,14 @@
 //
 
 import XCTest
+@testable import Ledger
 
 class RepositoryTests: XCTestCase {
 
-    var repository: LocalRepository!
+    var repository: LocalFactory!
     
     override func setUp() {
-        repository = Repository.valueRepository
+        repository = Repository.localFactory
     }
 
     override func tearDown() {
@@ -23,9 +24,37 @@ class RepositoryTests: XCTestCase {
     func testRepositoryExistence() {
         XCTAssertNotNil(repository)
     }
-    
-    func testRepositoryValueCount() {
-        XCTAssertEqual(repository.values.count, 5)
+
+    func testRepositoryAllValuesExistence() {
+        XCTAssertNotNil(repository.allValues)
+    }
+
+    func testRepositoryAllValuesCount() {
+        XCTAssertEqual(repository.allValues().count, 4)
     }
     
+    func testRepositoryNewValue() {
+        let testValue = repository.newValue(price: 20.7, currency: Currency(code: "EUR"))
+        XCTAssertNotNil(testValue)
+        
+        XCTAssertEqual(testValue.value, 20.7)
+        
+        XCTAssertEqual(testValue.currency.code, "EUR")
+        
+        let testValue2 = repository.newValue(price: -20.7, currency: Currency(code: "GBP"))
+        XCTAssertNotNil(testValue2)
+        
+        XCTAssertEqual(testValue2.value, -20.7)
+        
+        XCTAssertEqual(testValue2.currency.code, "GBP")
+
+    }
+    
+    func testRepositoryValuesFiltered() {
+        let theFilter: LocalFactory.ValueFilter = {
+            $0.currency.code == "EUR"
+        }
+        
+        XCTAssertNotNil(repository.valuesFiltered(by: theFilter))
+    }
 }

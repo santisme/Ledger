@@ -8,36 +8,10 @@
 
 import Foundation
 
-typealias Tags = Tag.Tags
-
-final class Tag {
-    
-    // MARK: - Properties
-    let name: Tags
-    
-    enum Tags: String {
-        case cash = "Cash"
-        case notesPayable = "Note Payable"
-        case earnings = "Earnings"
-        case initialInvestment = "Initial Investment"
-    }
-    
-    // MARK: - Inits
-    init(name: Tags) {
-        self.name = name
-    }
-    
-}
-
-// MARK: - Extensions
-extension Tag: Hashable {
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(self.name)
-    }
-}
-
-extension Tag: Equatable {
-    static func == (lhs: Tag, rhs: Tag) -> Bool {
-        return lhs.hashValue == rhs.hashValue
-    }
+enum Tag: String, CaseIterable {
+    case cash = "Cash"
+    case notesPayable = "Note Payable"
+    case earnings = "Earnings"
+    case initialInvestment = "Initial Investment"
+    case inventory = "Inventory"
 }

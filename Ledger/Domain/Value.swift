@@ -46,6 +46,10 @@ extension Value: Comparable {
     static func < (lhs: Value, rhs: Value) -> Bool {
         return lhs.proxyForComparison() < rhs.proxyForComparison()
     }
-    
-    
+}
+
+extension Value {
+    convenience init(value: Double, currency: ISO4217) {
+        self.init(value: value, currency: Currency(code: currency))
+    }
 }
